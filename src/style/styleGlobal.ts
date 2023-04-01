@@ -8,6 +8,7 @@ export const GlobalStyle = createGlobalStyle`
        --laranja_claro:#fec208;
        --vermelho:#da291c;
        --vermelho_claro:#ff2d08;
+       --bege:#f8ecdc;
     }
    
 

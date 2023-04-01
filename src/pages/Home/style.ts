@@ -43,19 +43,39 @@ export const BtnMore = styled.div`
 export const ArticleFood = styled.div`
 display:flex;
 align-items:center;
-    justify-content:center;
+justify-content:center;
 
 
 
-article{
-    padding:1.875rem;
 
-    img{
-        width:31.25rem;
-    }
 
+
+
+
+
+`
+export const FoodImg = styled.article`
+
+
+
+padding:1.875rem;
+
+img{
+    width:31.25rem;
 }
 
+
+`
+
+export const FoodImgMin = styled.article`
+
+
+padding-top:200px;
+
+
+img{
+    width:31.25rem;
+}
 
 
 `

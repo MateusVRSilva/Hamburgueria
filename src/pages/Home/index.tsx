@@ -2,9 +2,12 @@ import { NavLink } from 'react-router-dom'
 import { NavBar } from "../../Components/NavBar"
 import { Footer } from "../../Components/Footer"
 import Foto from '../../assets/article.png'
+import BannerPrincipal from '../../assets/Hamburguer.jpg'
 import {Tiltle,
     BtnMore,
     ArticleFood,
+    FoodImg,
+    FoodImgMin,
   
 } from './style'
 
@@ -21,7 +24,7 @@ export function Home  () {
                    
                    Melhor que Hamburguer,é o Combo de Hamburguer com Batata Frita
                 </span>
-                <span>Afinal Felicidade e Haburguer terem 10 letra não pode ser conhecidencia!</span>
+                <span>Afinal, Felicidade e Haburguer terem 10 letra não pode ser conhecidencia!</span>
                        
             </Tiltle>
           <BtnMore>
@@ -31,9 +34,9 @@ export function Home  () {
           </BtnMore>
 
 <ArticleFood>
-    <article><img src={Foto} alt="" /></article>
-    <article><img src={Foto} alt="" /></article>
-    <article><img src={Foto} alt="" /></article>
+    <FoodImgMin><img src={Foto} alt="" /></FoodImgMin>
+    <FoodImg><img src={BannerPrincipal} alt="" /></FoodImg>
+    <FoodImgMin><img src={Foto} alt="" /></FoodImgMin>
 </ArticleFood>
           
         </div>
