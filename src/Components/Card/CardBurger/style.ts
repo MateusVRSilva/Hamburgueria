@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 export const Title = styled.div`
 
-font-size:30px;
+font-size:20px;
 padding:30px 0px 30px 160px;
 
 

@@ -2,14 +2,12 @@ import { NavLink } from 'react-router-dom'
 import { NavBar } from "../../Components/NavBar"
 import { Footer } from "../../Components/Footer"
 import BurgerPng from "../../assets/hamburguer1.png"
+import { CardPedido } from '../../Components/Card/CardPedidos'
 
 import {
-    BugerImg,
     BodyCarrinho,
     BodyPedido,
     TituloPedido,
-    ArticlePedido,
-    TextoPedido,
     BodyBurger,
     ResumoPedido,
     TituloResumo,
@@ -39,18 +37,7 @@ export const Carrinho = () => {
 <BodyBurger>
     
 
-    <ArticlePedido>
-         <BugerImg>
-        <img src={BurgerPng} alt="" />
-
-    </BugerImg>
-<TextoPedido>
-    <p>Hamburger</p>
-    <p>R$:19,90</p>
-</TextoPedido>
-
-
-    </ArticlePedido>
+<CardPedido/>
 
     </BodyBurger>
 </BodyPedido>
@@ -58,7 +45,7 @@ export const Carrinho = () => {
 <ResumoPedido>
 
     <TituloResumo>
-       <h2>ResumoPedido</h2>
+       <h2>Resumo Do Pedido</h2>
     </TituloResumo>
 
 <ArticleValor>

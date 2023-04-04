@@ -1,22 +1,21 @@
-import Burger1 from '../../assets/Hamburguer1.png'
+import Burger1 from '../../../assets/hamburguer1.png'
 import { NavLink } from 'react-router-dom'
 import {
     ImgBurger,
     ContainerBurger,
-    Title,
     ContainerCardapio,
     Content,
+    Title
 } from './style'
 
-export const Cards = () =>{
+export const CardsBurger = () =>{
 
     return(
 
         <>
-        <Title> 
-            <h2>Cardapio</h2>
-
-    </Title>
+<Title>
+    <h2>Hamburguers</h2>
+</Title>
 
     <ContainerCardapio>
     <ContainerBurger>

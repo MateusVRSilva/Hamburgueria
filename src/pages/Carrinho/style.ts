@@ -6,6 +6,10 @@ export const BodyCarrinho = styled.div`
 display:flex;
 padding-bottom:50px;
 
+@media (max-width: 768px){
+    flex-direction:column;
+}
+
 `
 
 export const BodyPedido = styled.div`
@@ -34,13 +38,6 @@ padding-bottom:50px;
 `
 
 
-export const TextoPedido = styled.div`
-
-padding:50px;
-font-size:20px;
-
-`
-
 
 export const BodyBurger = styled.div`
 
@@ -55,33 +52,6 @@ transition: box-shadow 0.3s;
     
 &:hover {
     box-shadow: 1px 5px 29px -13px rgba(0, 0, 0, 0.25);
-}
-
-`
-
-export const ArticlePedido = styled.div`
-
-display:flex;
-margin:30px 30px 10px 30px;
-padding-top:30px;
-border-bottom:2px solid #000;
-
-
-
-`
-
-
-
-export const BugerImg = styled.div`
-
-width: 150px;
-
-img{
-    width: 170px;
-    height:120px;
-    background-color:var(--bege);
-    border-radius:10px;
-    border:1px solid #000;
 }
 
 `
