@@ -17,10 +17,7 @@ export const ContainerLogin = styled.div`
 display:flex;
 height:100vh;
 
-
-
 `
-
 
 export const ArticleLogin = styled.article`
 display:flex;
@@ -29,10 +26,6 @@ justify-content:center;
 background-color:#502314;
 width:35%;
 
-
-
-
-
 `
 
 export const COntinerLogin = styled.div`
@@ -40,7 +33,7 @@ margin-left:60px;
   width:500px;
   height:650px;
   border:2px solid #000;
-  border-radius:12%;
+  border-radius:60px;
   -webkit-box-shadow: -4px 4px 35px 6px rgba(0,0,0,0.52);
 -moz-box-shadow: -4px 4px 35px 6px rgba(0,0,0,0.52);
 box-shadow: -4px 4px 35px 6px rgba(0,0,0,0.52);
@@ -55,9 +48,7 @@ width:300px;
 
   }
 
-  
 `
-
 
 export const FormLogin = styled.form`
 
@@ -68,11 +59,9 @@ align-items:center;
 justify-content:center;
 flex-direction:column;
 
-
 h2{
     padding-bottom:30px;
 }
-
 
 div{
     display:flex;
@@ -86,9 +75,7 @@ label{
 font-size:20px;
 padding-bottom:15px;
 
-
 }
-
 
 input{
     width:40vh;
@@ -97,20 +84,24 @@ input{
 }
 `
 
-
 export const ContainerButton = styled.div`
 
 display:flex;
-justify-content:flex-end;
-padding-right:170px;
+justify-content:flex;
+padding-left:49px;
 
 button{
-    padding:15px 45px 15px 45px;
+    /* padding:15px 45px 15px 45px; */
     font-size:20px;
     color:#fff;
+    width:390px;
+    height:50px;
+    
   
     border:none;
     background-color:var(--amarelo);
+    border-radius:10px;
+
 }
 `
 

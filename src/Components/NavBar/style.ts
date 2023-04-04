@@ -6,15 +6,14 @@ export const HeaderNav = styled.header`
       display: flex;
       align-items: center;
       box-shadow: 0px 4px 3px -3px black;
+      justify-content: space-between;
 
 
 
     background-color: var(--vermelho);
 
 
- img{
-    padding-left: 145px ;
- }
+
 
   
 `
@@ -25,12 +24,13 @@ export const ContentLinks = styled.div`
     display: flex;
     align-items: center;
     gap: 3.5rem;
+    padding-left:80px;
 
 nav{
      display: flex;   
     align-items: center;
     gap: 3.125rem;
-    padding-left:80px;
+ 
 
     }
 
@@ -49,9 +49,9 @@ nav{
 
 export const ContentLogin = styled.div`
 a{
-    display:flex;
+    display: inline-flex;
     align-items:center;
-    padding-left:56.25rem;
+    padding-right:80px;
      font-size:1.375rem; 
      line-height: 1.3125rem;
      text-decoration: none;

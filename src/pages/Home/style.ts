@@ -36,27 +36,17 @@ export const BtnMore = styled.div`
         border-radius:.625rem;
         border:none;
         font-size:1.25rem;
-    }
+         
 `
 
-
 export const ArticleFood = styled.div`
-display:flex;
-align-items:center;
-justify-content:center;
 
-
-
-
-
-
-
-
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
 
 `
 export const FoodImg = styled.article`
-
-
 
 padding:1.875rem;
 
@@ -64,19 +54,15 @@ img{
     width:31.25rem;
 }
 
-
 `
 
 export const FoodImgMin = styled.article`
 
-
 padding-top:200px;
-
 
 img{
     width:31.25rem;
 }
-
 
 `
 
