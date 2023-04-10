@@ -13,7 +13,7 @@ import {
     
 } from './style'
 
-export function Login () {
+export function Register () {
     return(
         <>
 
@@ -25,7 +25,7 @@ export function Login () {
                  <COntinerLogin>
                     <img src={LogoPng} alt="" />
                     <FormLogin action="">
-                        <h2>Bem Vindo de volta <br /> Hamburgueiro :)</h2>
+                        <h2>Seja Bem-Vindo a <br /> Hamburgueria :)</h2>
                         <div>
                       
                         <label htmlFor="">  <EnvelopeSimple size={30} color="#fff0f0" /> <span>E-mail</span></label>
@@ -36,6 +36,8 @@ export function Login () {
                         <input type="password" placeholder='Insira sua senha' />
                         </div>
                     </FormLogin>
+
+
 
                     <ContainerButton>
                     <NavLink to="/" title='home'> <button>Entrar</button></NavLink>

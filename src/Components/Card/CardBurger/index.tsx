@@ -28,8 +28,8 @@ export const CardsBurger = () =>{
                 <h5> Hamburger</h5>
                </Content>
             </NavLink>
-        </ContainerBurger>            
-    
+        </ContainerBurger>     
+       
       
 
     </ContainerCardapio>

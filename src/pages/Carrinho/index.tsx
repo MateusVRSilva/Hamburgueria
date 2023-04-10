@@ -1,7 +1,6 @@
 import { NavLink } from 'react-router-dom'
 import { NavBar } from "../../Components/NavBar"
 import { Footer } from "../../Components/Footer"
-import BurgerPng from "../../assets/hamburguer1.png"
 import { CardPedido } from '../../Components/Card/CardPedidos'
 
 import {
@@ -67,7 +66,7 @@ export const Carrinho = () => {
        
     </TotalValor>
 <Buttom>
-    <NavLink to="/" title='Fazer Pedido'>  <button>Finalizar Pedido</button></NavLink>
+    <NavLink to="#" title='Fazer Pedido'>  <button>Finalizar Pedido</button></NavLink>
 </Buttom>
 </ArticleValor>
 

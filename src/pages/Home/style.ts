@@ -35,7 +35,8 @@ export const BtnMore = styled.div`
         color:#fff;
         border-radius:.625rem;
         border:none;
-        font-size:1.25rem;
+        font-size:1.25rem; 
+    }
          
 `
 
