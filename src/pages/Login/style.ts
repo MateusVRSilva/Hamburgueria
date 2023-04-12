@@ -75,6 +75,10 @@ label{
 font-size:20px;
 padding-bottom:15px;
 
+span{
+        margin-left:15px;
+    }
+
 }
 
 input{

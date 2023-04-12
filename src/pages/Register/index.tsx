@@ -6,10 +6,11 @@ import {
     ImgLogin,
     ContainerLogin,
     ArticleLogin,
-    COntinerLogin,
+    ContinerLogin,
     FormLogin,
     ContainerButton,
-    ContainerGeral
+    ContainerGeral,
+    BtnLogin
     
 } from './style'
 
@@ -20,9 +21,22 @@ export function Register () {
         <ContainerGeral>
 
             <ContainerLogin>
+
+
+
                 <ImgLogin> <img src={LoginImg} alt="" /></ImgLogin>
+
+                
+
+            
                 <ArticleLogin>
-                 <COntinerLogin>
+
+                    
+
+                 
+    
+
+                 <ContinerLogin>
                     <img src={LogoPng} alt="" />
                     <FormLogin action="">
                         <h2>Seja Bem-Vindo a <br /> Hamburgueria :)</h2>
@@ -40,11 +54,17 @@ export function Register () {
 
 
                     <ContainerButton>
-                    <NavLink to="/" title='home'> <button>Entrar</button></NavLink>
+                    <NavLink to="/" title='home'> <button>Cadastrar-se</button></NavLink>
                     
                     </ContainerButton>
                         
-                </COntinerLogin>
+                </ContinerLogin>
+
+                <BtnLogin>
+                        <span>Ja tem uma conta? entre aqui</span>
+ <NavLink to="/login" title='Login'>  <button>Entrar</button></NavLink>
+
+                    </BtnLogin>
 
                 </ArticleLogin>
             </ContainerLogin>

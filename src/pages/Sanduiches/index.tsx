@@ -1,7 +1,9 @@
 
 import BurgerImg from "../../assets/hamburguer1.png"
+import { NavLink } from 'react-router-dom'
 import { Footer } from "../../Components/Footer"
 import { NavBar } from "../../Components/NavBar"
+import { ArrowUUpLeft } from "@phosphor-icons/react"
 import {
     ContainerBurger,
     ArticleBurger,
@@ -21,6 +23,8 @@ export const Sanduiches = () => {
 
              <ContainerBurger>
 
+                <NavLink to="/cardapio" title="voltar"> <ArrowUUpLeft size={32} color="#000" /><span>Voltar</span></NavLink>
+
                  <ArticleBurger>
 
                    <div>
@@ -32,6 +36,10 @@ export const Sanduiches = () => {
                     <h2>Hamburger de Frango</h2>
                     <span>Pão com gergelim, dois suculentos hambúrgueres de pura carne bovina, duas fatias de queijo derretido, duas fatias de picles, ketchup e mostarda. 
                         Todos esses ingredientes são cuidadosamente armazenados e preparados para você se deliciar com um sanduíche fresquinho e de alta qualidade.</span>
+
+
+
+                        
                    </Descricao>
 
                   <BtnComprar>

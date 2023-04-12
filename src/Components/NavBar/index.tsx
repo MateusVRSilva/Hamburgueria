@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import LogoPng from '../../assets/LogoBurger.png';
-import  {House, BookOpen, Hamburger, UserSquare, ShoppingCart} from '@phosphor-icons/react';
+import  {House, BookOpen, User , SignIn , ShoppingCart} from '@phosphor-icons/react';
 import {
     HeaderNav,
     ContentLinks,
@@ -10,11 +10,6 @@ import {
 export const NavBar = () => {
     return(
         <>
-        {/* <Header>
-            <span>USD</span>
-            <span>FREE SHIPPING ON ALL HERMAN MILLER! FEB. 25–28. </span>
-            <span>Support</span>
-        </Header> */}
     <HeaderNav>
       
        
@@ -23,12 +18,12 @@ export const NavBar = () => {
        <nav>
         <NavLink to="/" title="home"> <House size={25} color="#fff0f0" /><span>Inicio</span></NavLink>
         <NavLink to="/cardapio" title="cardapio"> <BookOpen size={25} color="#fff0f0" /><span>Cardapio</span></NavLink>
-        <NavLink to="/combos" title="combos"> <Hamburger size={25} color="#fff0f0" /><span>Combos</span></NavLink>
+        <NavLink to="/profile" title="combos"> <User  size={25} color="#fff0f0"  /><span>Perfil</span></NavLink>
        </nav>
        </ContentLinks>
        <ContentLogin> 
         <NavLink to="/carrinho" title="Shop"> <ShoppingCart size={25} color="#fff0f0" /><span>Carrinho</span></NavLink>
-        <NavLink to="/login" title="Shop"> <UserSquare size={25} color="#fff0f0" /><span>Login</span></NavLink>
+        <NavLink to="/login" title="Shop"> <SignIn  size={25} color="#fff0f0" /><span>Login</span></NavLink>
        
        </ContentLogin>
     </HeaderNav>

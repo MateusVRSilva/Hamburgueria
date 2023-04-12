@@ -2,14 +2,10 @@ import styled from 'styled-components'
 
 
 export const ContainerGeral = styled.body`
-
 overflow-y: hidden;`
 
 
 export const ImgLogin = styled.article`
--webkit-box-shadow: 20px 4px 31px -12px rgba(0,0,0,0.52);
--moz-box-shadow: 20px 4px 31px -12px rgba(0,0,0,0.52);
-box-shadow: 20px 4px 31px -12px rgba(0,0,0,0.52);
 width:70%;
 `
 
@@ -21,14 +17,16 @@ height:100vh;
 
 export const ArticleLogin = styled.article`
 display:flex;
-align-items:center;
-justify-content:center;
+flex-direction:column;
+padding-top:50px;
 background-color:#502314;
 width:35%;
 
+
+
 `
 
-export const COntinerLogin = styled.div`
+export const ContinerLogin = styled.div`
 margin-left:60px;
   width:500px;
   height:650px;
@@ -38,6 +36,12 @@ margin-left:60px;
 -moz-box-shadow: -4px 4px 35px 6px rgba(0,0,0,0.52);
 box-shadow: -4px 4px 35px 6px rgba(0,0,0,0.52);
 background-color:#4f2011;
+
+
+
+align-items:center;
+justify-content:center;
+background-color:#502314;
 
   img{
     display:flex;
@@ -75,11 +79,17 @@ label{
 font-size:20px;
 padding-bottom:15px;
 
+
+ span{
+        margin-left:15px;
+    }
 }
 
 input{
     width:40vh;
     padding:15px 15px;
+
+   
     
 }
 `
@@ -104,4 +114,37 @@ button{
 
 }
 `
+
+export const BtnLogin = styled.div`
+display:flex;
+justify-content:center;
+padding-top:50px;
+
+
+span{
+    font-size:20px;
+    margin-right:10px;
+    color:#fff;
+  
+}
+
+button{
+    /* padding:15px 45px 15px 45px; */
+    font-size:20px;
+    color:#fff;
+    width:190px;
+    height:50px;
+    
+  
+    border:none;
+    background-color:var(--vermelho);
+    border-radius:10px;
+
+}
+`
+export const ContinerBtn = styled.div`
+
+
+`
+
 

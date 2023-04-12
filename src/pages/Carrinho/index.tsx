@@ -66,7 +66,7 @@ export const Carrinho = () => {
        
     </TotalValor>
 <Buttom>
-    <NavLink to="#" title='Fazer Pedido'>  <button>Finalizar Pedido</button></NavLink>
+    <NavLink to="/success" title='Fazer Pedido'>  <button>Finalizar Pedido</button></NavLink>
 </Buttom>
 </ArticleValor>
 

@@ -6,6 +6,20 @@ export const ContainerBurger = styled.div`
 display:flex;
 background-color:var(--bege);
 
+a{
+
+    display:flex;
+    margin:20px;
+    text-decoration:none;
+    color:#000;
+
+    span{
+
+        font-size:25px;
+        margin-left:15px;
+    }
+}
+
 
 `
 
@@ -41,6 +55,8 @@ span{
 export const BtnComprar = styled.div`
 display:flex;
 justify-content:center;
+align-items:center;
+padding-left:150px;
 button{
 width:450px;
 height:60px;

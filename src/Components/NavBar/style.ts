@@ -14,7 +14,6 @@ export const HeaderNav = styled.header`
 
 
 
-
   
 `
 
@@ -41,7 +40,12 @@ nav{
     font-size: 1.375rem;        
     line-height: 1.3125rem;        
     text-decoration: none;        
-    color: #fff;        
+    color: #fff;
+    
+    span{
+
+      margin-left:20px;
+    }
            
  }
 
@@ -56,6 +60,11 @@ a{
      line-height: 1.3125rem;
      text-decoration: none;
        color: #fff;
+
+       span{
+
+margin-left:20px;
+}
    
 }
 
