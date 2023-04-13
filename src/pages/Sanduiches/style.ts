@@ -7,12 +7,15 @@ display:flex;
 background-color:var(--bege);
 
 a{
-
+height:30px;
     display:flex;
     margin:20px;
     text-decoration:none;
     color:#000;
+ &:hover{
 
+    color:var(--vermelho);
+ }
     span{
 
         font-size:25px;
