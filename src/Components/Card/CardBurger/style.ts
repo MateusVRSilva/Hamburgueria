@@ -8,6 +8,14 @@ font-size:20px;
 padding:30px 0px 30px 160px;
 
 
+@media  (max-width: 768px) {
+    
+
+    padding:10px 0px 10px 20px;
+    
+    }
+
+
 `
 export const ContainerCardapio = styled.div`
 margin:30px 60px 30px 60px;
@@ -18,6 +26,17 @@ display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 30px;
+
+
+
+
+    @media  (max-width: 768px) {
+    
+
+    padding:0px;
+    margin:30px 0px 30px 17px;
+    
+    }
     
 `
 
@@ -45,6 +64,8 @@ background-color:#fff;
     &:hover {
         box-shadow: 1px 5px 29px -13px rgba(0, 0, 0, 0.25);
     }
+
+
 
 
 

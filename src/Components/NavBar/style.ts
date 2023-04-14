@@ -14,6 +14,21 @@ export const HeaderNav = styled.header`
 
 
 
+    @media (max-width: 768px){
+
+display:flex;
+align-items: center;
+justify-content:center;
+      img{
+
+        display:none;
+
+        
+      }
+    }
+
+
+
   
 `
 
@@ -24,6 +39,15 @@ export const ContentLinks = styled.div`
     align-items: center;
     gap: 3.5rem;
     padding-left:80px;
+
+
+@media (max-width:768px) {
+padding-right:40px;
+  padding-left:0px;
+  
+}
+
+
 
 nav{
      display: flex;   
@@ -41,10 +65,25 @@ nav{
     line-height: 1.3125rem;        
     text-decoration: none;        
     color: #fff;
+
+
     
     span{
 
       margin-left:20px;
+
+
+
+      @media (max-width:768px) {
+        gap:0px;
+    padding-left:0px;
+      display:none;
+       opacity:0;
+
+
+      
+        
+      }
     }
            
  }
@@ -61,9 +100,24 @@ a{
      text-decoration: none;
        color: #fff;
 
+
+
+
+       @media (max-width:768px) {
+margin:15px;
+padding-right:0px;
+
+}
+
        span{
 
 margin-left:20px;
+
+@media (max-width:768px) {
+
+display:none;
+
+}
 }
    
 }

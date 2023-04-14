@@ -2,11 +2,34 @@ import styled from 'styled-components'
 
 
 export const ContainerGeral = styled.body`
-overflow-y: hidden;`
+
+
+
+
+overflow-y: hidden;
+
+
+@media (max-width: 768px)  {
+    
+}overflow-y: visible;
+
+`
 
 
 export const ImgLogin = styled.article`
 width:70%;
+
+@media (max-width: 768px) {
+    
+
+    img{
+display:none;
+
+    }
+
+        
+    
+}
 `
 
 export const ContainerLogin = styled.div`
@@ -21,8 +44,13 @@ flex-direction:column;
 padding-top:50px;
 background-color:#502314;
 width:35%;
+height:100%;
 
+@media (max-width: 768px) {
+    width:100%;
+    height:100vh;
 
+}
 
 `
 
@@ -43,12 +71,38 @@ align-items:center;
 justify-content:center;
 background-color:#502314;
 
+
+
+
+
+@media (max-width: 768px) {
+
+
+    -webkit-box-shadow: -4px 4px 35px 6px rgba(0,0,0,0.52);
+-moz-box-shadow: -4px 4px 35px 6px rgba(0,0,0,0.52);
+box-shadow: -4px 4px 35px 6px rgba(0,0,0,0.0);
+
+margin:0px;
+
+width:60vh;
+
+}
+
   img{
     display:flex;
 align-items:center;
 justify-content:center;
 padding:30px 0px 10px 200px;
 width:300px;
+
+
+@media  (max-width: 768px) {
+ 
+ padding:30px 0px 10px 150px;
+
+ width:250px;
+
+}
 
   }
 
@@ -89,6 +143,10 @@ input{
     width:40vh;
     padding:15px 15px;
 
+    @media (max-width: 768px) {
+        width:50vh;
+    }
+
    
     
 }
@@ -99,6 +157,15 @@ export const ContainerButton = styled.div`
 display:flex;
 justify-content:flex;
 padding-left:49px;
+
+
+@media (max-width: 768px) {
+
+padding-bottom:50px;
+
+
+
+}
 
 button{
     /* padding:15px 45px 15px 45px; */
@@ -112,6 +179,18 @@ button{
     background-color:var(--amarelo);
     border-radius:10px;
 
+
+
+    @media (max-width: 768px) {
+
+width:270px;
+height:50px;
+
+
+
+
+}
+
 }
 `
 
@@ -119,6 +198,7 @@ export const BtnLogin = styled.div`
 display:flex;
 justify-content:center;
 padding-top:50px;
+background-color:#502314;
 
 
 span{

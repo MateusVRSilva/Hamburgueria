@@ -18,6 +18,15 @@ display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 30px;
+
+
+    @media  (max-width: 768px) {
+    
+
+    padding:0px;
+    margin:30px 0px 30px 17px;
+    
+    }
     
 `
 

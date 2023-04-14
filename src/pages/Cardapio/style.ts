@@ -7,5 +7,12 @@ padding:30px 0px 30px 160px;
 display:flex;
 justify-content:center;
 
+@media  (max-width: 768px) {
+    
+
+padding:0px;
+
+}
+
 
 `

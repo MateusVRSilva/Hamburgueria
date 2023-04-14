@@ -11,11 +11,27 @@ export const ImgLogin = styled.article`
 -moz-box-shadow: 20px 4px 31px -12px rgba(0,0,0,0.52);
 box-shadow: 20px 4px 31px -12px rgba(0,0,0,0.52);
 width:70%;
+
+@media (max-width: 768px) {
+    
+
+    img{
+display:none;
+
+    }
+
+        
+    
+}
+
 `
 
 export const ContainerLogin = styled.div`
 display:flex;
 height:100vh;
+
+
+
 
 `
 
@@ -25,6 +41,10 @@ align-items:center;
 justify-content:center;
 background-color:#502314;
 width:35%;
+
+@media (max-width: 768px) {
+    width:100%;
+}
 
 `
 
@@ -39,12 +59,33 @@ margin-left:60px;
 box-shadow: -4px 4px 35px 6px rgba(0,0,0,0.52);
 background-color:#4f2011;
 
+
+
+@media (max-width: 768px) {
+
+    margin:0px;
+
+    width:400px;
+    height:650px;
+}
+
+
   img{
     display:flex;
 align-items:center;
 justify-content:center;
 padding:30px 0px 10px 200px;
 width:300px;
+
+
+
+@media  (max-width: 768px) {
+ 
+    padding:30px 0px 10px 150px;
+
+    width:250px;
+
+}
 
   }
 
@@ -84,6 +125,12 @@ span{
 input{
     width:40vh;
     padding:15px 15px;
+
+
+
+    @media (max-width: 768px) {
+        width:50vh;
+    }
     
 }
 `
@@ -93,6 +140,16 @@ export const ContainerButton = styled.div`
 display:flex;
 justify-content:flex;
 padding-left:49px;
+
+
+
+@media (max-width: 768px) {
+        
+               
+    padding-left:55px;
+        
+    
+            }
 
 button{
     /* padding:15px 45px 15px 45px; */
@@ -105,6 +162,19 @@ button{
     border:none;
     background-color:var(--amarelo);
     border-radius:10px;
+
+
+
+    @media (max-width: 768px) {
+
+
+    width:270px;
+    height:50px;
+
+
+
+
+    }
 
 }
 `

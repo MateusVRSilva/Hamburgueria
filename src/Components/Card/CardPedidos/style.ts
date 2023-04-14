@@ -7,8 +7,6 @@ margin:30px 30px 10px 30px;
 padding-top:30px;
 border-bottom:2px solid #000;
 
-
-
 `
 
 export const BugerImg = styled.div`

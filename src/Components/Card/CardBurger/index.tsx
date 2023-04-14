@@ -29,6 +29,28 @@ export const CardsBurger = () =>{
                </Content>
             </NavLink>
         </ContainerBurger>     
+        <ContainerBurger>
+            <NavLink to="/sanduiche" title="sanduiche">
+               <ImgBurger>
+                <img src={Burger1} alt=""  />
+               </ImgBurger>
+
+               <Content>
+                <h5> Hamburger</h5>
+               </Content>
+            </NavLink>
+        </ContainerBurger>  
+        <ContainerBurger>
+            <NavLink to="/sanduiche" title="sanduiche">
+               <ImgBurger>
+                <img src={Burger1} alt=""  />
+               </ImgBurger>
+
+               <Content>
+                <h5> Hamburger</h5>
+               </Content>
+            </NavLink>
+        </ContainerBurger>  
        
       
 

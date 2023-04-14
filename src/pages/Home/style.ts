@@ -11,6 +11,12 @@ h1{
     padding-bottom:1.875rem;
     font-size:4.0625rem;
 
+
+
+    @media  (max-width: 768px)  {
+       padding-left:10px;
+    }
+
 }
 
 span{
@@ -18,6 +24,11 @@ span{
     align-items:center;
     justify-content:center;
     font-size:1.5625rem;
+
+
+    @media  (max-width: 768px)  {
+       padding-left:20px;
+    }
 }
 
 `
@@ -27,7 +38,13 @@ export const BtnMore = styled.div`
     align-items:center;
     justify-content:center;
     padding-top:1.875rem;
-    
+
+
+
+
+    @media  (max-width: 768px)  {
+       padding-bottom:70px;
+    }
 
     button{
         padding:20px 30px 20px 30px;
@@ -36,6 +53,8 @@ export const BtnMore = styled.div`
         border-radius:.625rem;
         border:none;
         font-size:1.25rem; 
+
+
     }
          
 `
@@ -60,6 +79,11 @@ img{
 export const FoodImgMin = styled.article`
 
 padding-top:200px;
+
+
+@media  (max-width: 768px)  {
+       padding-top:0px;
+    }
 
 img{
     width:31.25rem;

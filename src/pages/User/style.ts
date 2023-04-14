@@ -7,6 +7,11 @@ display:flex;
 justify-content:space-between;
 width:80%;
 
+@media (max-width:768px){
+
+  width:100%;
+}
+  
 
 
 
@@ -118,15 +123,26 @@ display: flex;
 `
 
 export const NavUser = styled.div`
-
 background-color: var(--vermelho);
 width:20%;
 height:100vh;
 font-size:20px;
+
+
+@media (max-width: 768px) {
+
+
+display:none;
+
+
+
+}
+
 nav{
 
 display:flex;
 flex-direction:column;
+
 
 
 
@@ -143,6 +159,8 @@ a{
    
     }
 }
+
+
 
 }
 

@@ -28,6 +28,29 @@ export const CardsBebida = () =>{
                </Content>
             </NavLink>
         </ContainerBurger>          
+        <ContainerBurger>
+            <NavLink to="/bebidas" title="bebidas">
+               <ImgBurger>
+                <img src={Burger1} alt=""  />
+               </ImgBurger>
+
+               <Content>
+                <h5> Refrigerante</h5>
+               </Content>
+            </NavLink>
+        </ContainerBurger> 
+        <ContainerBurger>
+            <NavLink to="/bebidas" title="bebidas">
+               <ImgBurger>
+                <img src={Burger1} alt=""  />
+               </ImgBurger>
+
+               <Content>
+                <h5> Refrigerante</h5>
+               </Content>
+            </NavLink>
+        </ContainerBurger> 
+        
       
         
           

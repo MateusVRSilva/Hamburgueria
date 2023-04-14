@@ -28,6 +28,14 @@ display:flex;
  justify-content:center;
  padding-bottom:1.25rem;
  padding-top:1.25rem;
+
+ @media  (max-width: 768px){
+padding:0px;
+flex-direction:column;
+
+}
+
+ 
  
  a{
     color:#fff;
@@ -44,6 +52,13 @@ export const ArticleFooterImport = styled.article`
  align-items:center;
  justify-content:center;
  padding-bottom:1.875rem;
+
+
+ @media  (max-width: 768px){
+
+flex-direction:column;
+
+}
  a{
     color:#fff;
     font-size:15px;
