@@ -7,6 +7,8 @@ display:flex;
 justify-content:space-between;
 width:80%;
 
+
+
 @media (max-width:768px){
 
   width:100%;
@@ -22,6 +24,13 @@ width:80%;
 export const ContainerProfile = styled.div`
 width:100%;
 padding:40px;
+
+@media (max-width:768px){
+
+padding:15px;
+
+}
+
 
 `
 

@@ -14,7 +14,9 @@ h1{
 
 
     @media  (max-width: 768px)  {
-       padding-left:10px;
+      
+       font-size:37px;
+       text-align:center;
     }
 
 }
@@ -27,7 +29,9 @@ span{
 
 
     @media  (max-width: 768px)  {
-       padding-left:20px;
+  
+       font-size:20px;
+       text-align:center;
     }
 }
 

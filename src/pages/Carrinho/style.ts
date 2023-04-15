@@ -40,9 +40,23 @@ padding-bottom:50px;
 
  h2{
     font-size:60px;
+
+    
+@media  (max-width: 768px) {
+    
+  font-size:40px;
+        
+        }
  }
  span{
     font-size:20px;
+
+
+    @media  (max-width: 768px) {
+    
+    font-size:20px;
+          
+          }
   
 
     a{
@@ -94,13 +108,19 @@ margin:50px 0px 0px 150px;
 
  h2{
     font-size:60px;
+
+    @media  (max-width: 768px) {
+    
+    font-size:40px;
+          
+          }
  }
 
 
 
  @media  (max-width: 768px) {
     
-    margin-left:60px;
+    margin-left:25px;
         
         }
 `

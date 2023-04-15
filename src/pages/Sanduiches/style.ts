@@ -79,6 +79,8 @@ padding-bottom:40px;
 @media  (max-width: 768px) {
     width:100%;
    padding:0px 0px 40px 0px;
+   text-align:center;
+   font-size:40px;
 }
 
 }
@@ -86,6 +88,7 @@ padding-bottom:40px;
 span{
 
     font-size:20px;
+
 }
 
 

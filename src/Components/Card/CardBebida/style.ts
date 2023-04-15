@@ -8,6 +8,14 @@ font-size:20px;
 padding:30px 0px 30px 160px;
 
 
+@media  (max-width: 768px) {
+    
+
+padding:30px 0px 30px 17px;
+    
+    }
+
+
 `
 export const ContainerCardapio = styled.div`
 margin:30px 60px 30px 60px;

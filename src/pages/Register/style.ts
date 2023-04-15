@@ -84,7 +84,10 @@ box-shadow: -4px 4px 35px 6px rgba(0,0,0,0.0);
 
 margin:0px;
 
-width:60vh;
+width:400px;
+   
+
+
 
 }
 
