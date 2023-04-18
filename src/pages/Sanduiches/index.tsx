@@ -1,6 +1,6 @@
 
 import BurgerImg from "../../assets/hamburguer1.png"
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 import { Footer } from "../../Components/Footer"
 import { NavBar } from "../../Components/NavBar"
 import { ArrowUUpLeft } from "@phosphor-icons/react"
@@ -11,8 +11,28 @@ import {
     BtnComprar,
 
 } from './style'
+import { useEffect, useState } from "react"
 
-export const Sanduiches = () => {
+
+interface PropsSanduiche{
+    id: number;
+    nome: string;
+    descricao: string;
+    valor: number;
+}
+
+
+
+
+export const Sanduiches = ({id, nome, descricao, valor}:PropsSanduiche) => {
+    let {state} = useLocation()
+    console.log(state)
+const fazerPedido = () =>{
+        localStorage.setItem('nome', JSON.stringify(state.produto));
+    }
+
+   
+
     return(
 
 
@@ -32,10 +52,13 @@ export const Sanduiches = () => {
                    </div>
                             <div>
                    <Descricao>
+
+                    
+                       <h2>{state.produto.nome}</h2> 
+                      <span>{state.produto.descricao}</span> 
                   
-                    <h2>Hamburger de Frango</h2>
-                    <span>Pão com gergelim, dois suculentos hambúrgueres de pura carne bovina, duas fatias de queijo derretido, duas fatias de picles, ketchup e mostarda. 
-                        Todos esses ingredientes são cuidadosamente armazenados e preparados para você se deliciar com um sanduíche fresquinho e de alta qualidade.</span>
+             
+                  
 
 
 
@@ -43,7 +66,7 @@ export const Sanduiches = () => {
                    </Descricao>
 
                   <BtnComprar>
-                    <button>Adicionar ao Carrinho</button>
+                    <button onClick={fazerPedido} >Adicionar ao Carrinho</button>
                    </BtnComprar>
 
                               </div>

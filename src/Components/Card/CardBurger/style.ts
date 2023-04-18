@@ -2,33 +2,16 @@ import styled from 'styled-components'
 
 
 
-export const Title = styled.div`
 
-font-size:20px;
-padding:30px 0px 30px 160px;
-
-
-@media  (max-width: 768px) {
-    
-
-    padding:10px 0px 10px 20px;
-    
-    }
-
-
-`
 export const ContainerCardapio = styled.div`
-margin:30px 60px 30px 60px;
-padding-left:100px;
-
 
 display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 30px;
+margin:20px;
 
-
-
+ 
 
     @media  (max-width: 768px) {
     
@@ -59,6 +42,7 @@ background-color:#fff;
     justify-content: space-between;
 
     transition: box-shadow 0.3s;
+
 
     
     &:hover {

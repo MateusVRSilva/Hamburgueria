@@ -1,56 +1,42 @@
 import Burger1 from '../../../assets/hamburguer1.png'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate, useNavigation, Link } from 'react-router-dom'
 import {
     ImgBurger,
     ContainerBurger,
     ContainerCardapio,
     Content,
-    Title
 } from './style'
 
-export const CardsBurger = () =>{
+interface PropsSanduiche{
+    id: number;
+    nome: string;
+    descricao: string;
+    valor: number;
+}
 
+export const CardsBurger = ({id, nome, descricao, valor}:PropsSanduiche) =>{ console.log(nome)
+    const navigation = useNavigate()
+function handleGoToProduct () {
+navigation('/sanduiche')
+}
     return(
 
         <>
-<Title>
-    <h2>Hamburguers</h2>
-</Title>
+
 
     <ContainerCardapio>
     <ContainerBurger>
-            <NavLink to="/sanduiche" title="sanduiche">
+            <Link to={{pathname:'/sanduiche' }} state={{produto:{id, nome, descricao, valor}}} title="sanduiche">
                <ImgBurger>
                 <img src={Burger1} alt=""  />
                </ImgBurger>
 
                <Content>
-                <h5> Hamburger</h5>
+                <h5> {nome}</h5>
                </Content>
-            </NavLink>
+            </Link>
         </ContainerBurger>     
-        <ContainerBurger>
-            <NavLink to="/sanduiche" title="sanduiche">
-               <ImgBurger>
-                <img src={Burger1} alt=""  />
-               </ImgBurger>
-
-               <Content>
-                <h5> Hamburger</h5>
-               </Content>
-            </NavLink>
-        </ContainerBurger>  
-        <ContainerBurger>
-            <NavLink to="/sanduiche" title="sanduiche">
-               <ImgBurger>
-                <img src={Burger1} alt=""  />
-               </ImgBurger>
-
-               <Content>
-                <h5> Hamburger</h5>
-               </Content>
-            </NavLink>
-        </ContainerBurger>  
+    
        
       
 
