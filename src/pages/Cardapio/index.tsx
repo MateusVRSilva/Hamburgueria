@@ -9,57 +9,57 @@ import {
 } from './style'
 
 
-const  mckPedidos = [
+const mckPedidos = [
     {
-    id: 0,
-    nome: 'hamburger',
-    descricao: 'Pão com gergelim, dois suculentos hambúrgueres de pura carne bovina, duas fatias de queijo derretido, duas fatias de picles, ketchup e mostarda. Todos esses ingredientes são cuidadosamente armazenados e preparados para você se deliciar com um sanduíche fresquinho e de alta qualidade.',
-    valor: 19.90,
+        id: 0,
+        nome: 'hamburger',
+        descricao: 'Pão com gergelim, dois suculentos hambúrgueres de pura carne bovina, duas fatias de queijo derretido, duas fatias de picles, ketchup e mostarda. Todos esses ingredientes são cuidadosamente armazenados e preparados para você se deliciar com um sanduíche fresquinho e de alta qualidade.',
+        valor: 29.90,
     },
     {
         id: 1,
         nome: 'hamburger bovino',
         descricao: 'Pão com gergelim, dois suculentos hambúrgueres de pura carne bovina, duas fatias de queijo derretido, duas fatias de picles, ketchup e mostarda. Todos esses ingredientes são cuidadosamente armazenados e preparados para você se deliciar com um sanduíche fresquinho e de alta qualidade.',
         valor: 19.90,
-        },
-        {
-            id: 2,
-            nome: 'hamburger de Frango',
-            descricao: 'Pão com gergelim, dois suculentos hambúrgueres de pura carne bovina, duas fatias de queijo derretido, duas fatias de picles, ketchup e mostarda. Todos esses ingredientes são cuidadosamente armazenados e preparados para você se deliciar com um sanduíche fresquinho e de alta qualidade.',
-            valor: 19.90,
-            },
-            
-    
-    ]
+    },
+    {
+        id: 2,
+        nome: 'hamburger de Frango',
+        descricao: 'Pão com gergelim, dois suculentos hambúrgueres de pura carne bovina, duas fatias de queijo derretido, duas fatias de picles, ketchup e mostarda. Todos esses ingredientes são cuidadosamente armazenados e preparados para você se deliciar com um sanduíche fresquinho e de alta qualidade.',
+        valor: 19.90,
+    },
 
-export function Cardapio () {
+
+]
+
+export function Cardapio() {
 
     return (
 
-     <>
+        <>
 
-     <NavBar/>
+            <NavBar />
 
-     <Title> 
-            <h1>Cardapio</h1>
+            <Title>
+                <h1>Cardapio</h1>
 
-    </Title>
-    <div>
-    <SubTitle>
-    <h2>Hamburguers</h2>
-</SubTitle>
-<BurgerContainer>
-           {mckPedidos.map(pedido => (<CardsBurger nome={pedido.nome} id={pedido.id} descricao={pedido.descricao} valor={pedido.valor}/>))}
+            </Title>
+            <div>
+                <SubTitle>
+                    <h2>Hamburguers</h2>
+                </SubTitle>
+                <BurgerContainer>
+                    {mckPedidos.map((pedido, index) => (<CardsBurger key={pedido.id} nome={pedido.nome} id={pedido.id} descricao={pedido.descricao} valor={pedido.valor} />))}
 
-</BurgerContainer>
-    </div>
- 
-
-    <CardsBebida/>
+                </BurgerContainer>
+            </div>
 
 
-     <Footer/>
-     </>
-    
+            <CardsBebida />
+
+
+            <Footer />
+        </>
+
     )
 }

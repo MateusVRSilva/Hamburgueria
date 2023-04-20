@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 import { NavBar } from "../../Components/NavBar"
 import { Footer } from "../../Components/Footer"
 import { CardPedido } from '../../Components/Card/CardPedidos'
@@ -16,14 +16,33 @@ import {
     TotalValor,
     Buttom
 } from "./style"
+import { useEffect, useState } from 'react'
+
+interface pedidosUser{
+    id:number;
+    nome:string;
+    descricao:string;
+    valor:number;
+}
+export const Carrinho = ( {nome, valor,}: pedidosUser) => {
+      const [pedidoUsar, setPedido] = useState<pedidosUser [] | undefined>()
+    useEffect(() => {
+        const fazerPedido = localStorage.getItem('@pedidos')
+          if( fazerPedido ){
+            setPedido(JSON.parse(fazerPedido))
+          }
+        console.log(fazerPedido)
+
+},[])
 
 
-export const Carrinho = () => {
+const finalizarPedido = () => {
+    localStorage.clear()
+}
     return(
 
 <>
 <NavBar/>
-
 
 <BodyCarrinho>
 <BodyPedido>
@@ -35,8 +54,11 @@ export const Carrinho = () => {
 
 <BodyBurger>
     
+<div>
 
-<CardPedido/>
+{pedidoUsar && pedidoUsar.map((carrinho, index) => (<CardPedido key={index} nome={carrinho.nome} id={carrinho.id} descricao={carrinho.descricao} valor={carrinho.valor}/> ))}
+
+</div>
 
     </BodyBurger>
 </BodyPedido>
@@ -63,15 +85,13 @@ export const Carrinho = () => {
         <p>Total</p>
         <p> R$19,90</p>
 
-       
     </TotalValor>
 <Buttom>
-    <NavLink to="/success" title='Fazer Pedido'>  <button>Finalizar Pedido</button></NavLink>
+    <NavLink to="/success" title='Fazer Pedido' onClick={finalizarPedido} >  <button>Finalizar Pedido</button></NavLink>
 </Buttom>
 </ArticleValor>
 
 </ResumoPedido>
-
 
 </BodyCarrinho>
 <Footer/>

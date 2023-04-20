@@ -1,5 +1,4 @@
 import BurgerPng from "../../../assets/hamburguer1.png"
-
 import {
     BugerImg,
     ArticlePedido,
@@ -7,9 +6,15 @@ import {
 } from "./style"
 
 
+interface PropsSanduiche{
+    id: number;
+    nome: string;
+    descricao: string;
+    valor: number;
+}
 
+export const CardPedido = ({id, nome, descricao, valor}:PropsSanduiche) => {
 
-export const CardPedido = () => {
     return(
 
         <>
@@ -19,14 +24,12 @@ export const CardPedido = () => {
 
     </BugerImg>
 <TextoPedido>
-    <p>Hamburger</p>
-    <p>R$:19,90</p>
+    <p>{nome}</p>
+    <p>R$ {valor}</p>
 </TextoPedido>
-
 
     </ArticlePedido>
     
-        
         </>
     )
 }

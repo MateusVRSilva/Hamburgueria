@@ -7,40 +7,36 @@ import {
     Content,
 } from './style'
 
-interface PropsSanduiche{
+interface PropsSanduiche {
     id: number;
     nome: string;
     descricao: string;
     valor: number;
 }
 
-export const CardsBurger = ({id, nome, descricao, valor}:PropsSanduiche) =>{ console.log(nome)
+export const CardsBurger = ({ id, nome, descricao, valor }: PropsSanduiche) => {
     const navigation = useNavigate()
-function handleGoToProduct () {
-navigation('/sanduiche')
-}
-    return(
+    function handleGoToProduct() {
+        navigation('/sanduiche')
+    }
+    return (
 
         <>
 
+            <ContainerCardapio>
+                <ContainerBurger>
+                    <Link to={{ pathname: '/sanduiche' }} state={{ produto: { id, nome, descricao, valor } }} title="sanduiche">
+                        <ImgBurger>
+                            <img src={Burger1} alt="" />
+                        </ImgBurger>
 
-    <ContainerCardapio>
-    <ContainerBurger>
-            <Link to={{pathname:'/sanduiche' }} state={{produto:{id, nome, descricao, valor}}} title="sanduiche">
-               <ImgBurger>
-                <img src={Burger1} alt=""  />
-               </ImgBurger>
+                        <Content>
+                            <h5> {nome}</h5>
+                        </Content>
+                    </Link>
+                </ContainerBurger>
 
-               <Content>
-                <h5> {nome}</h5>
-               </Content>
-            </Link>
-        </ContainerBurger>     
-    
-       
-      
-
-    </ContainerCardapio>
+            </ContainerCardapio>
         </>
     )
 }
