@@ -24,7 +24,7 @@ interface pedidosUser{
     descricao:string;
     valor:number;
 }
-export const Carrinho = ( {nome, valor, id, descricao}: pedidosUser) => {
+export const Carrinho = ( ) => {
       const [pedidoUsar, setPedido] = useState<pedidosUser [] | undefined>()
     useEffect(() => {
         const fazerPedido = localStorage.getItem('@pedidos')

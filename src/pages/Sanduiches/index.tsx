@@ -22,7 +22,7 @@ interface PropsSanduiche {
     valor: number;
 }
 
-export const Sanduiches = ({ id, nome, descricao, valor }: PropsSanduiche) => {
+export const Sanduiches = () => {
     let { state } = useLocation()
     const [loading, setLoading] = useState(false)
     const [carrinhopedido, setCarrinhopedido] = useState<PropsSanduiche[] | []>([])
