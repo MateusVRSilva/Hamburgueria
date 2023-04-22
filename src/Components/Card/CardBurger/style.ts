@@ -1,8 +1,5 @@
 import styled from 'styled-components'
 
-
-
-
 export const ContainerCardapio = styled.div`
 
 display: flex;
