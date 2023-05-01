@@ -80,7 +80,7 @@ export function Cardapio() {
 <div>
 
   <SubTitle>
-                    <h2>refrigetante</h2>
+                    <h2>refrigerante</h2>
                 </SubTitle>
 
                 <BurgerContainer>
