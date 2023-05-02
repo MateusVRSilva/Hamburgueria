@@ -73,7 +73,7 @@ const finalizarPedido = () => {
     <ResumoValor>
         <Titulos>
         <p>SubTotal </p>
-          <p>R$:59,80</p>
+          <p>R$:19,90</p>
 </Titulos>
 <Titulos>
         <p>Frete: </p>
@@ -83,7 +83,7 @@ const finalizarPedido = () => {
 
     <TotalValor> 
         <p>Total</p>
-        <p> R$59,80</p>
+        <p> R$19,90</p>
 
     </TotalValor>
 <Buttom>
