@@ -12,19 +12,43 @@ import {
 const mckHamburger = [
     {
         id: 0,
-        nome: 'hamburger',
+        nome: 'Hambúrguer',
         descricao: 'Pão com gergelim, dois suculentos hambúrgueres de pura carne bovina, duas fatias de queijo derretido, duas fatias de picles, ketchup e mostarda. Todos esses ingredientes são cuidadosamente armazenados e preparados para você se deliciar com um sanduíche fresquinho e de alta qualidade.',
         valor: 29.90,
     },
     {
         id: 1,
-        nome: 'hamburger bovino',
+        nome: 'Hambúrguer Bovino',
         descricao: 'Pão com gergelim, dois suculentos hambúrgueres de pura carne bovina, duas fatias de queijo derretido, duas fatias de picles, ketchup e mostarda. Todos esses ingredientes são cuidadosamente armazenados e preparados para você se deliciar com um sanduíche fresquinho e de alta qualidade.',
         valor: 19.90,
     },
     {
         id: 2,
-        nome: 'hamburger de Frango',
+        nome: 'Hambúrguer de Frango',
+        descricao: 'Pão com gergelim, dois suculentos hambúrgueres de pura carne bovina, duas fatias de queijo derretido, duas fatias de picles, ketchup e mostarda. Todos esses ingredientes são cuidadosamente armazenados e preparados para você se deliciar com um sanduíche fresquinho e de alta qualidade.',
+        valor: 19.90,
+    },
+    {
+        id: 2,
+        nome: 'Hambúrguer Vegano',
+        descricao: 'Pão com gergelim, dois suculentos hambúrgueres de pura carne bovina, duas fatias de queijo derretido, duas fatias de picles, ketchup e mostarda. Todos esses ingredientes são cuidadosamente armazenados e preparados para você se deliciar com um sanduíche fresquinho e de alta qualidade.',
+        valor: 19.90,
+    },
+    {
+        id: 2,
+        nome: 'Hambúrguer Vegetariano',
+        descricao: 'Pão com gergelim, dois suculentos hambúrgueres de pura carne bovina, duas fatias de queijo derretido, duas fatias de picles, ketchup e mostarda. Todos esses ingredientes são cuidadosamente armazenados e preparados para você se deliciar com um sanduíche fresquinho e de alta qualidade.',
+        valor: 19.90,
+    },
+    {
+        id: 2,
+        nome: 'Hambúrguer Especial da Casa',
+        descricao: 'Pão com gergelim, dois suculentos hambúrgueres de pura carne bovina, duas fatias de queijo derretido, duas fatias de picles, ketchup e mostarda. Todos esses ingredientes são cuidadosamente armazenados e preparados para você se deliciar com um sanduíche fresquinho e de alta qualidade.',
+        valor: 19.90,
+    },
+    {
+        id: 2,
+        nome: 'Burguêszinho',
         descricao: 'Pão com gergelim, dois suculentos hambúrgueres de pura carne bovina, duas fatias de queijo derretido, duas fatias de picles, ketchup e mostarda. Todos esses ingredientes são cuidadosamente armazenados e preparados para você se deliciar com um sanduíche fresquinho e de alta qualidade.',
         valor: 19.90,
     },
